@@ -49,6 +49,7 @@
 
     <script>
         function submitOrder() {
+            console.log("da log duoc vao ham");
             const itemName = document.getElementById("itemName").value;
             const itemQty = document.getElementById("itemQty").value;
             const orderDelivery = document.getElementById("orderDelivery").value;
@@ -63,7 +64,7 @@
                 phoneNumber: phoneNumber
             };
 
-            fetch('https://your-api-url/api/orders', {
+            fetch('https://localhost:7219/api/orders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
